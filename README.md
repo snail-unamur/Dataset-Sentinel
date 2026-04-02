@@ -1,79 +1,94 @@
+DOI
+
 # Dataset-Sentinel
 
-Dataset containing all analyzed projects for the sentinel experiment (https://github.com/JeromeMaquoi/sentinel-experiments)
+Dataset containing all analyzed projects for the Sentinel experiment — [sentinel-experiments](https://github.com/JeromeMaquoi/sentinel-experiments)
 
 ## Introduction
 
-The sentinel experiment is a pipeline-based tool for making experiments on projects. For now, the pipeline consists of those modules:
+The Sentinel experiment is a pipeline-based tool for running experiments on Java projects. It currently consists of two modules:
 
-- EnergyMeasurementsModule: measures the actual energy consumption of Java applications using JoularJX
-- SpoonInstrumentConstructorModule: instruments Java source code to track constructor invocations using Spoon and sends the data to a backend for storage and analysis
+- **EnergyMeasurementsModule**: measures the actual energy consumption of Java applications using JoularJX.
+- **SpoonInstrumentConstructorModule**: instruments Java source code to track constructor invocations using Spoon, and sends the data to a backend for storage and analysis.
 
-In this dataset, we gathered all the measures retrieved by these two modules on the projects we found.
+This dataset gathers all measures retrieved by these two modules across the projects analyzed.
 
-## meta-data description
+## Repository hierarchy
 
-There is the list of the metadata we have :
+## Metadata dump
 
-- Github link to the project
-- doi: the doi of the data gathered for this project
-- line coverage
-- method coverage
-- class coverage
-- branch coverage
-- number of lines of code: this number is calculated by cloc (https://github.com/aldanial/cloc) (only Java lines)
-- number of stars of the project
-- date of the last commit
-- average number of commits in the last 4 weeks
 
+## Metadata description
+
+List of metadata available for each project:
+
+| Metadata | Description |
+|---|---|
+| GitHub link | URL of the project's GitHub repository |
+| Line coverage | Percentage of lines of code executed during the test suite |
+| Method coverage | Percentage of methods called during the test suite |
+| Class coverage | Percentage of classes instantiated or accessed during the test suite |
+| Branch coverage | Percentage of code branches (if/else, switch…) covered during the test suite |
+| Lines of code | Total number of Java lines of code, calculated by [cloc](https://github.com/aldanial/cloc) |
+| Stars | Number of GitHub stars at the time of the snapshot |
+| Last commit date | Date of the most recent commit at the time of the snapshot |
+| Avg commits / 4 weeks | Average number of commits per week over the last 4 weeks at the time of the snapshot |
+
+---
 ## commons-configuration
 
-### meta-data
+### Metadata
 
-On the day of Mar 26, 2026, the meta-data were:
+> Snapshot: Mar 26, 2026
 
-- Github link to the project: https://github.com/apache/commons-configuration
-- doi:
-- line coverage: 89%
-- method coverage: 96%
-- class coverage: 91%
-- branch coverage: 81%
-- number of lines of code:
-- number of stars of the project: 212
-- date of the last commit: Mar 23, 2026
-- average number of commits in the last 4 weeks: 2.75
+| Field | Value                                           |
+|---|-------------------------------------------------|
+| GitHub | https://github.com/apache/commons-configuration |
+| Line coverage | 89%                                             |
+| Method coverage | 96%                                             |
+| Class coverage | 91%                                             |
+| Branch coverage | 81%                                             |
+| Lines of code | 53912                                           |
+| Stars | 212                                             |
+| Last commit | Mar 23, 2026                                    |
+| Avg commits / 4 weeks | 2.75                                            |
 
 ### How we found the project
 
-As Apache produces famous and qualitative Java project, we have tried all the "commons" project, and commons-configuration worked.
+Apache produces well-regarded, high-quality Java projects. We systematically tried all "commons" projects — commons-configuration was the first to work end-to-end.
 
 ### Difficulties encountered
 
-As it twas the first projevct we have done, we had to understand how the configuration file and the sentinel tool work. This was particulary hard at the beginning when there was only a small documentation (which had been completed later during the project). For the first part of the project (the measurment tool), there was no other difficulties. For the second part (instrument constructor tool), we had come little problems:
+Being our first project, the main challenge was understanding the configuration file and how the Sentinel tool works. Documentation was sparse early on and was completed progressively. For the instrumentation module specifically:
 
-- Apache rat was blocking the execution of the test suite, so the solution was to skip the Apache rat execution
-- One file contained an enum structure, which is not well-superted by Spoon, so we made Spoon ignore this file
-- Some tests in the test suite failed, so we had to skip them
+- **Apache Rat** was blocking the execution of the test suite → skipped Apache Rat execution
+- **One file contained an enum structure**, which is not well-supported by Spoon → made Spoon ignore this file
+- **Some tests in the test suite were failing** → skipped those tests
+
+---
 
 ## jackson-core
 
-### meta-data
+### Metadata
 
-On the day of ..., 2026, the meta-data were:
+> Snapshot: _date not yet recorded_
 
-- Github link to the project: https://github.com/fasterxml/jackson-core
-- doi:
-- line coverage:
-- method coverage:
-- class coverage:
-- branch coverage: 75%
-- number of lines of code: 86513
-- number of stars of the project: 2.4k
-- date of the last commit: Mar 29, 2026
-- average number of commits in the last 4 weeks: 6.5
+| Field | Value |
+|---|---|
+| GitHub | https://github.com/fasterxml/jackson-core |
+| Line coverage | — |
+| Method coverage | — |
+| Class coverage | — |
+| Branch coverage | 75% |
+| Lines of code | 86,513 |
+| Stars | 2.4k |
+| Last commit | Mar 29, 2026 |
+| Avg commits / 4 weeks | 6.5 |
 
 ### How we found the project
 
-We tried someprojects from Java Awesome, including jackson, which leade us to jackson-core.
+We explored projects listed on Awesome Java. Jackson was among them, leading us directly to jackson-core.
 
 ### Difficulties encountered
+
+_Not yet documented._
