@@ -1,4 +1,4 @@
-DOI
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19481968.svg)](https://doi.org/10.5281/zenodo.19481968)
 
 # Dataset-Sentinel
 
@@ -21,9 +21,19 @@ organization
     └──project_1
         └──joular.zip
         └──instrument_constructor.zip
-        └──project_configuration
+        └──project_configuration.yml
     └──readme.md #You are here
 ```
+
+The data are zipped because they are to big to be published on Zenodo.
+
+For example, if you want to find the Joular's data for commons-configuration, you should follow the directory located at:
+
+```bash
+commons-configuration/joularjx_measurements_commons-configuration_525bd980b07dba983d931baeff573c0aa9880821.zip
+```
+
+and unzip the folder.
 
 ## Metadata dump
 
@@ -77,7 +87,7 @@ Being our first project, the main challenge was understanding the configuration 
 
 ---
 
-## jackson-core
+## jackson-core (WIP)
 
 ### Metadata
 
@@ -101,4 +111,4 @@ We explored projects listed on Awesome Java. Jackson was among them, leading us 
 
 ### Difficulties encountered
 
-_Not yet documented._
+As the sentinel experiment code base is using jackson core, there was confusion between the jackson core project we were analysing and the code used in the sentinel experiment project, which was causing a class duplication error.

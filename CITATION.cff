@@ -1,0 +1,21 @@
+abstract: <p>v0.0.1</p>
+authors:
+  - family-names: Damlakhi
+  - family-names: Delvaux
+  - family-names: Eben
+  - family-names: Jamoulle
+cff-version: 1.2.0
+date-released: "2026-04-09"
+doi: 10.5281/zenodo.19481968
+identifiers:
+  - type: swh
+    value: swh:1:dir:ba33c00bca19289beb8f1e005b0ceca730de1e75;origin=https://doi.org/10.5281/zenodo.19481968;visit=swh:1:snp:004f653d942bcef9b68906a1ef7f8b783e51ddc3;anchor=swh:1:rel:ccf26431f9d42097503e2622985506e23e32a6fc;path=snail-unamur-Dataset-Sentinel-5d8f43f
+license:
+  - cc-by-4.0
+message: If you use this software, please cite it using the metadata from this file.
+repository-code: https://github.com/snail-unamur/Dataset-Sentinel/tree/v0.0.1
+title:
+  "snail-unamur/Dataset-Sentinel: Sentinel Experiment - Analyzed project dataset
+  - v0.0.1"
+type: software
+version: v0.0.1
