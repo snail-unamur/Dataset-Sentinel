@@ -41,20 +41,20 @@ and unzip the folder.
 
 List of metadata available for each project:
 
-| Metadata                       | Description                                                                                        |
-| ------------------------------ | -------------------------------------------------------------------------------------------------- |
-| GitHub link                    | URL of the project's GitHub repository                                                             |
-| Commit SHA                     | The SHA of the last commit                                                                         |
-| JDK version                    | the JDV version to run the project                                                                 |
-| Total / Failed / Ignored tests | Detailed tests result                                                                              |
-| Lines of code (LOC)            | Total number of Java lines of code, calculated by Jacoco                                           |
-| Class coverage                 | Percentage of classes instantiated or accessed during the test suite, calculated by Jacoco         |
-| Method coverage                | Percentage of methods called during the test suite, calculated by Jacoco                           |
-| Line coverage                  | Percentage of lines of code executed during the test suite, calculated by Jacoco                   |
-| Branch coverage                | Percentage of code branches (if/else, switch…) covered during the test suite, calculated by Jacoco |
-| Stars                          | Number of GitHub stars at the time of the snapshot                                                 |
-| Last commit date               | Date of the most recent commit at the time of the snapshot                                         |
-| Avg commits / 4 weeks          | Average number of commits per week over the last 4 weeks at the time of the snapshot               |
+| Metadata                       | Description                                                                                                   |
+| ------------------------------ | ------------------------------------------------------------------------------------------------------------- |
+| GitHub link                    | URL of the project's GitHub repository                                                                        |
+| Commit SHA                     | SHA of the last commit                                                                                        |
+| JDK version                    | JDK version required to run the project                                                                       |
+| Total / Failed / Ignored tests | Detailed test results                                                                                         |
+| Lines of code (LOC)            | Total Java LOC, calculated by [jacoco](https://github.com/jacoco/jacoco)                                      |
+| Class coverage                 | % of classes instantiated during the test suite, by [jacoco](https://github.com/jacoco/jacoco)                |
+| Method coverage                | % of methods called during the test suite, by [jacoco](https://github.com/jacoco/jacoco)                      |
+| Line coverage                  | % of lines executed during the test suite, by [jacoco](https://github.com/jacoco/jacoco)                      |
+| Branch coverage                | % of branches (if/else, switch…) covered during the test suite, by [jacoco](https://github.com/jacoco/jacoco) |
+| Stars                          | Number of GitHub stars at the time of the snapshot                                                            |
+| Last commit date               | Date of the most recent commit at the time of the snapshot                                                    |
+| Avg commits / 4 weeks          | Average commits per 4-week period at the time of the snapshot                                                 |
 
 ---
 

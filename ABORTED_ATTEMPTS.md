@@ -15,7 +15,7 @@
 - **Status:** Partial
 - `measure`: Working (+/-), not seeing a lot of csv files which is not normal.
 
-- `instrumentconstructor`: Not working, due to the porject architecture which contains many subprojects which make the analysis project very difficult.
+- `instrumentconstructor`: Not working, due to the project architecture which contains many subprojects which make analysing project very difficult.
 
 ---
 
@@ -37,7 +37,7 @@
 
 ## Gson
 
-- **Status:** Skipped, small project with 36k lines of code.
+- **Status:** Skipped, small project with 36k lines of code (measured with cloc).
 
 ---
 
@@ -47,11 +47,5 @@
 - `measure`: Working with no issue. command used: "mvn clean test -pl assertj-core -Dmaven.test.failure.ignore=true -Dspotless.check.skip=true -Denforcer.skip=true"
 
 - `instrumentconstructor`: Not working — after ~7-8 hours of investigation, concluded it has too many issues. The project has multiple packages which causes Spoon to generate duplicate and ignored classes that are very hard to handle.
-
----
-
-## Gson
-
-- **Status:** Skipped, small project with 36k lines of code.
 
 ---
