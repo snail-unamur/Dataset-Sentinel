@@ -41,17 +41,20 @@ and unzip the folder.
 
 List of metadata available for each project:
 
-| Metadata              | Description                                                                                |
-| --------------------- | ------------------------------------------------------------------------------------------ |
-| GitHub link           | URL of the project's GitHub repository                                                     |
-| Line coverage         | Percentage of lines of code executed during the test suite                                 |
-| Method coverage       | Percentage of methods called during the test suite                                         |
-| Class coverage        | Percentage of classes instantiated or accessed during the test suite                       |
-| Branch coverage       | Percentage of code branches (if/else, switch…) covered during the test suite               |
-| Lines of code         | Total number of Java lines of code, calculated by [cloc](https://github.com/aldanial/cloc) |
-| Stars                 | Number of GitHub stars at the time of the snapshot                                         |
-| Last commit date      | Date of the most recent commit at the time of the snapshot                                 |
-| Avg commits / 4 weeks | Average number of commits per week over the last 4 weeks at the time of the snapshot       |
+| Metadata                       | Description                                                                                        |
+| ------------------------------ | -------------------------------------------------------------------------------------------------- |
+| GitHub link                    | URL of the project's GitHub repository                                                             |
+| Commit SHA                     | The SHA of the last commit                                                                         |
+| JDK version                    | the JDV version to run the project                                                                 |
+| Total / Failed / Ignored tests | Detailed tests result                                                                              |
+| Lines of code (LOC)            | Total number of Java lines of code, calculated by Jacoco                                           |
+| Class coverage                 | Percentage of classes instantiated or accessed during the test suite, calculated by Jacoco         |
+| Method coverage                | Percentage of methods called during the test suite, calculated by Jacoco                           |
+| Line coverage                  | Percentage of lines of code executed during the test suite, calculated by Jacoco                   |
+| Branch coverage                | Percentage of code branches (if/else, switch…) covered during the test suite, calculated by Jacoco |
+| Stars                          | Number of GitHub stars at the time of the snapshot                                                 |
+| Last commit date               | Date of the most recent commit at the time of the snapshot                                         |
+| Avg commits / 4 weeks          | Average number of commits per week over the last 4 weeks at the time of the snapshot               |
 
 ---
 
@@ -59,19 +62,22 @@ List of metadata available for each project:
 
 ### Metadata
 
-> Snapshot: Mar 26, 2026
+> Snapshot: April 30, 2026
 
-| Field                 | Value                                           |
-| --------------------- | ----------------------------------------------- |
-| GitHub                | https://github.com/apache/commons-configuration |
-| Line coverage         | 89%                                             |
-| Method coverage       | 96%                                             |
-| Class coverage        | 91%                                             |
-| Branch coverage       | 81%                                             |
-| Lines of code         | 53912                                           |
-| Stars                 | 212                                             |
-| Last commit           | Mar 23, 2026                                    |
-| Avg commits / 4 weeks | 2.75                                            |
+| Field                          | Value                                           |
+| ------------------------------ | ----------------------------------------------- |
+| GitHub                         | https://github.com/apache/commons-configuration |
+| Commit SHA                     | 525bd980b07dba983d931baeff573c0aa9880821        |
+| JDK version                    | 17.0.10                                         |
+| Total / Failed / Ignored tests | 3012 / 0 / 2                                    |
+| Lines of code (LOC)            | 53912                                           |
+| Line coverage                  | 88% (9499 / 10735)                              |
+| Class coverage                 | 97% (285 / 294)                                 |
+| Method coverage                | 91% (2941 / 3240)                               |
+| Branch coverage                | 82% (3579 / 4320)                               |
+| Stars                          | 213                                             |
+| Last commit                    | April 30, 2026                                  |
+| Avg commits / 4 weeks          | 4.75                                            |
 
 ### How we found the project
 
@@ -91,19 +97,22 @@ Being our first project, the main challenge was understanding the configuration 
 
 ### Metadata
 
-> Snapshot: _date not yet recorded_
+> Snapshot: April 30, 2026
 
-| Field                 | Value                                     |
-| --------------------- | ----------------------------------------- |
-| GitHub                | https://github.com/fasterxml/jackson-core |
-| Line coverage         | —                                         |
-| Method coverage       | —                                         |
-| Class coverage        | —                                         |
-| Branch coverage       | 75%                                       |
-| Lines of code         | 86,513                                    |
-| Stars                 | 2.4k                                      |
-| Last commit           | Mar 29, 2026                              |
-| Avg commits / 4 weeks | 6.5                                       |
+| Field                          | Value                                     |
+| ------------------------------ | ----------------------------------------- |
+| GitHub                         | https://github.com/fasterxml/jackson-core |
+| Commit SHA                     | 701cd6af465c586aa9b33e95294acde034bd17af  |
+| JDK version                    | 17.0.10                                   |
+| Total / Failed / Ignored tests | 1638 / 0 / 2                              |
+| Lines of code (LOC)            | 18.889                                    |
+| Class coverage                 | 97% (142 / 146)                           |
+| Method coverage                | 82% (2144 / 2605)                         |
+| Line coverage                  | 82% (15435 / 18.889)                      |
+| Branch coverage                | 75% (8010 / 10583)                        |
+| Stars                          | 2.4k                                      |
+| Last commit                    | April 30, 2026                            |
+| Avg commits / 4 weeks          | 7.75                                      |
 
 ### How we found the project
 
