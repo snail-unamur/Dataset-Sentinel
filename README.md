@@ -93,7 +93,7 @@ Being our first project, the main challenge was understanding the configuration 
 
 ---
 
-## jackson-core (WIP)
+## jackson-core 
 
 ### Metadata
 
