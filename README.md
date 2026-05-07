@@ -35,8 +35,6 @@ commons-configuration/joularjx_measurements_commons-configuration_525bd980b07dba
 
 and unzip the folder.
 
-## Metadata dump
-
 ## Metadata description
 
 List of metadata available for each project:
