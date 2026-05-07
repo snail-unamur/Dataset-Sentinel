@@ -17,12 +17,14 @@ This dataset gathers all measures retrieved by these two modules across the proj
 
 ```bash
 organization
-└──repository
-    └──project_1
-        └──joular.zip
-        └──instrument_constructor.zip
-        └──project_configuration.yml
-    └──readme.md #You are here
+└── repository
+    └── project_1  # Project analyzed
+        ├── joular.zip
+        ├── instrument_constructor.zip
+        └── project_configuration.yml
+    ├── ABORTED_ATTEMPTS.md  # All aborted analyses
+    ├── CITATION.cff  # If you want to cite this repository
+    └── README.md  # You are here
 ```
 
 The data are zipped because they are to big to be published on Zenodo.
