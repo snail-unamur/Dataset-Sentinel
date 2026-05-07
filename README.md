@@ -22,12 +22,16 @@ organization
         ├── joular.zip
         ├── instrument_constructor.zip
         └── project_configuration.yml
+    └── project_2 # Project analyzed 
+        ├── joular.zip
+        ├── instrument_constructor.zip
+        └── project_configuration.yml
     ├── ABORTED_ATTEMPTS.md  # All aborted analyses
     ├── CITATION.cff  # If you want to cite this repository
     └── README.md  # You are here
 ```
 
-The data are zipped because they are to big to be published on Zenodo.
+The data from the different projects are zipped because otherwise they are too big to be published on Zenodo.
 
 For example, if you want to find the Joular's data for commons-configuration, you should follow the directory located at:
 
@@ -44,7 +48,7 @@ List of metadata available for each project:
 | Metadata                       | Description                                                                                                   |
 | ------------------------------ | ------------------------------------------------------------------------------------------------------------- |
 | GitHub link                    | URL of the project's GitHub repository                                                                        |
-| Commit SHA                     | SHA of the last commit                                                                                        |
+| Commit SHA                     | SHA of the commit analyzed                                                                                        |
 | JDK version                    | JDK version required to run the project                                                                       |
 | Total / Failed / Ignored tests | Detailed test results                                                                                         |
 | Lines of code (LOC)            | Total Java LOC, calculated by [jacoco](https://github.com/jacoco/jacoco)                                      |
